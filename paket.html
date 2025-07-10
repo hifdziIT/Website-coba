@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="custom.css" rel="stylesheet">
+    <title>Paket</title>
+</head>
+
+<body class="bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-light sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">TOURGUIDE</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Beranda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="paket.html">Paket</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Lainnya
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="contact.html">Kontak</a></li>
+              <li><a class="dropdown-item" href="kupon.html">Kupon</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" id="searchInput" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light" type="submit">Search</button>
+          </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- first layout start -->
+  <div class="container-fluid text-dark mt-4">
+    <div class="row justify-content-center">
+    <!-- Responsive Grid -->
+  <div class="row row-cols-1 row-cols-md-2 g-4">
+
+    <!-- Paket Entry Class -->
+    <div class="col">
+      <div class="card tour-card shadow h-100" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#modalEntry">
+        <div class="row g-0 h-100">
+          <div class="col-4">
+            <img src="assets/1carousel.jpg" class="img-fluid rounded-start" alt="Entry Image" />
+          </div>
+          <div class="col-8">
+            <div class="card-body">
+              <h5 class="card-title">Paket Utama A</h5>
+              <p class="card-text">Nikmati perjalanan bersama saya dengan biaya sangat terjangkau untuk menikmati keindahan Vietnam.</p>
+              <p class="card-text"><small class="text-muted">Klik untuk lihat detailnya</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Paket Medium Class -->
+    <div class="col">
+      <div class="card tour-card shadow h-100" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#modalMedium">
+        <div class="row g-0 h-100">
+          <div class="col-4">
+            <img src="assets/2carousel.jpg" class="img-fluid rounded-start" alt="Medium Image" />
+          </div>
+          <div class="col-8">
+            <div class="card-body">
+              <h5 class="card-title">Paket Utama B</h5>
+              <p class="card-text">Nikmati perjalanan anda keliling bersama saya melihat keindahan alam Gunung Bromo.</p>
+              <p class="card-text"><small class="text-muted">Klik untuk lihat detailnya</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Paket Hard Class -->
+    <div class="col">
+      <div class="card tour-card shadow h-100" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#modalHard">
+        <div class="row g-0 h-100">
+          <div class="col-4">
+            <img src="assets/3carousel.jpg" class="img-fluid rounded-start" alt="Hard Image" />
+          </div>
+          <div class="col-8">
+            <div class="card-body">
+              <h5 class="card-title">Paket Utama C</h5>
+              <p class="card-text">Nikmati perjalanan Anda bersama saya melihat keindahan Pantai Pandawa dan berbagai destinasi lainnya.</p>
+              <p class="card-text"><small class="text-muted">Klik untuk lihat detailnya</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Paket jogja-borobudur Class -->
+    <div class="col">
+      <div class="card tour-card shadow h-100" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#modaljogja">
+        <div class="row g-0 h-100">
+          <div class="col-4">
+            <img src="assets/4carousel.jpg" class="img-fluid rounded-start" alt="jogja Image" />
+          </div>
+          <div class="col-8">
+            <div class="card-body">
+              <h5 class="card-title">Paket Jogja-Borobudur</h5>
+              <p class="card-text">Nikmati perjalanan Anda bersama saya melihat keindahan Candi Borobudur dan berbagai destinasi lainnya.</p>
+              <p class="card-text"><small class="text-muted">Klik untuk lihat detailnya</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Paket mandalika Class -->
+    <div class="col">
+      <div class="card tour-card shadow h-100" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#modalmandalika">
+        <div class="row g-0 h-100">
+          <div class="col-4">
+            <img src="assets/5carousel.jpg" class="img-fluid rounded-start" alt="mandalika Image" />
+          </div>
+          <div class="col-8">
+            <div class="card-body">
+              <h5 class="card-title">Paket Mandalika</h5>
+              <p class="card-text">Nikmati perjalanan Anda bersama saya melihat keindahan Sirkuit Mandalika dan berbagai destinasi lainnya.</p>
+              <p class="card-text"><small class="text-muted">Klik untuk lihat detailnya</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Paket Raja Ampat Class -->
+    <div class="col">
+      <div class="card tour-card shadow h-100" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#modalrajaampat">
+        <div class="row g-0 h-100">
+          <div class="col-4">
+            <img src="assets/6carousel.jpg" class="img-fluid rounded-start" alt="rajaampat Image" />
+          </div>
+          <div class="col-8">
+            <div class="card-body">
+              <h5 class="card-title">Paket Raja Ampat</h5>
+              <p class="card-text">Nikmati perjalanan Anda bersama saya melihat keindahan Raja Ampat dan berbagai destinasi lainnya.</p>
+              <p class="card-text"><small class="text-muted">Klik untuk lihat detailnya</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <!-- Paket kep seribu Class -->
+    <div class="col">
+      <div class="card tour-card shadow h-100" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#modalkepseribu">
+        <div class="row g-0 h-100">
+          <div class="col-4">
+            <img src="assets/7carousel.jpg" class="img-fluid rounded-start" alt="kepseribu Image" />
+          </div>
+          <div class="col-8">
+            <div class="card-body">
+              <h5 class="card-title">Paket Kepulauan Seribu</h5>
+              <p class="card-text">Nikmati perjalanan Anda bersama saya melihat keindahan Kepulauan Seribu dan berbagai destinasi lainnya.</p>
+              <p class="card-text"><small class="text-muted">Klik untuk lihat detailnya</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Detail Entry -->
+<div class="modal fade" id="modalEntry" tabindex="-1" aria-labelledby="modalEntryLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-dark" id="modalEntryLabel">Detail Paket </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body text-dark">
+        <img src="assets/1carousel.jpg" class="img-fluid rounded mb-3" alt="Detail Entry" />
+        <p>
+          🧭 Tour Guide Calista – Eksplorasi Indahnya Vietnam Bersama Pemandu Terpercaya
+Nikmati pengalaman perjalanan yang tak terlupakan bersama Calista Tour, pemandu wisata profesional dan ramah yang telah berpengalaman mengantar wisatawan lokal maupun mancanegara menjelajahi keindahan Vietnam. Sebagai bagian dari Paket Utama A Vietnam, Calista siap membawa Anda mengunjungi destinasi-destinasi eksotis, memberikan informasi sejarah dan budaya secara menyenangkan, serta memastikan kenyamanan dan keamanan Anda selama tur.</p>
+        <ul>
+          <b>📍 Destinasi Unggulan dalam Tur:</b>
+          <li>Hạ Long Bay - Keajaiban alam dunia yang terkenal dengan gugusan pulau kapur di atas laut biru kehijauan.</li>
+          <li>Kota Tua Hoi An - Suasana klasik Vietnam dengan lampion-lampion warna-warni, pasar malam, dan arsitektur kolonial.</li>
+          <li>Ho Chi Minh City - Jelajahi kota metropolitan dengan bangunan bersejarah seperti Notre-Dame Cathedral dan War Remnants Museum.</li>
+          <li>Cu Chi Tunnels - Petualangan edukatif menyusuri terowongan bawah tanah peninggalan Perang Vietnam.</li>
+          <br>
+          <b>👩‍💼 Profil Calista (Tour Guide):</b>
+          <li>Nama Lengkap: Calista N. Trần</li>
+          <li>Bahasa: Indonesia, Inggris, Vietnam</li>
+          <li>Sertifikasi: Lulus pelatihan resmi Tour Leader dari Kementerian Pariwisata Vietnam</li>
+          <li>Karakteristik: Ramah, informatif, sabar, dan sangat memahami kebutuhan wisatawan Indonesia</li>
+          <li>Pengalaman: 7+ tahun menjadi tour guide profesional</li>
+          <br>
+          <b>💼 Apa yang Anda Dapatkan:</b>
+          <li>Pendampingan penuh selama tur</li>
+          <li>Penjelasan budaya dan sejarah lokal secara interaktif</li>
+          <li>Bantuan komunikasi dengan warga lokal (restoran, toko, transportasi)</li>
+          <li>Dokumentasi foto selama perjalanan (opsional)</li>
+          <li>Tips kuliner halal dan spot belanja oleh-oleh terbaik</li>
+          <br>
+          <b>🎁 Bonus Spesial:</b>
+          <li>Kupon diskon restoran lokal (senilai 100.000 VND)</li>
+          <li>Cinderamata khas Vietnam</li>
+          <li>Layanan konsultasi bebas biaya sebelum keberangkatan</li>
+          <br>
+          <b>🕒 Detail Paket Wisata:</b>
+          <li>Durasi: 3 hari 2 malam</li>
+          <li>Transportasi: Minivan AC + Kapal wisata</li>
+          <li>Fasilitas: Tiket masuk objek wisata, penginapan bintang 3, guide lokal (Calista), makan pagi-siang-malam</li>
+          <li>Minimal peserta: 2 orang</li>
+          <li>Harga: Rp. 3.900.000 / orang</li>
+          
+          <br>📞 Hubungi Kami Sekarang
+Jangan lewatkan kesempatan menjelajahi Vietnam bersama Calista - pemandu lokal yang berpengalaman dan menyenangkan.
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Detail Medium -->
+<div class="modal fade" id="modalMedium" tabindex="-1" aria-labelledby="modalMediumLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-dark" id="modalMediumLabel">Detail Paket </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body text-dark">
+        <img src="assets/2carousel.jpg" class="img-fluid rounded mb-3" alt="Detail Medium" />
+        <p>🌋 Tour Guide Bromo Tengger – Menjelajahi Pesona Alam & Budaya Gunung Bromo Bersama Ahlinya. Rasakan keajaiban alam Gunung Bromo yang legendaris bersama Tour Guide Lokal Bromo Tengger yang profesional dan berpengalaman. Nikmati pemandangan sunrise terbaik di Indonesia, jelajahi lautan pasir yang luas, serta pelajari kebudayaan unik Suku Tengger secara langsung dari pemandu yang memahami daerah ini luar dalam.</p>
+        <ul>
+          <b>🧑‍💼 Profil Tour Guide: Arya Widya</b>
+          <li>Domisili: Desa Ngadisari, Probolinggo (kaki Gunung Bromo)</li>
+          <li>Bahasa: Indonesia, Inggris dasar</li>
+          <li>Pengalaman: Lebih dari 10 tahun menjadi guide di kawasan Bromo–Tengger–Semeru</li>
+          <li>Sertifikasi: Pemandu wisata bersertifikat dari Dinas Pariwisata Jawa Timur</li>
+          <li>Ciri khas: Ramah, berpengetahuan luas tentang sejarah dan mitologi Tengger, serta sangat sabar dalam memandu anak-anak maupun lansia</li>
+          <br>
+          <b>📍 Destinasi dan Aktivitas Tur</b><br>
+Tour Bromo Tengger tidak hanya menyuguhkan panorama alam, tetapi juga mengajak wisatawan mengenal budaya lokal yang unik.
+<br><b>🌄 Spot Wisata yang Dikunjungi:</b>
+          <li>Penanjakan 1 / Kingkong Hill – Tempat terbaik menyaksikan matahari terbit dengan latar Gunung Bromo, Semeru, dan Batok.</li>
+          <li>Lautan Pasir Bromo – Padang pasir luas yang menyelimuti kawah Bromo, cocok untuk jeep ride & foto epik.</li>
+          <li>Kawah Bromo – Pendakian ke bibir kawah aktif yang masih mengeluarkan uap belerang.</li>
+          <li>Pura Luhur Poten – Tempat ibadah utama Suku Tengger yang kental dengan nilai spiritual dan budaya Hindu Jawa.</li>
+          <li>Bukit Teletubbies & Savana – Hamparan bukit hijau dan padang rumput yang menyejukkan mata.</li>
+          <li>Pasar Sukapura / Pasar Cemoro Lawang – Jelajahi kehidupan lokal, cicipi kuliner tradisional seperti jagung bakar dan wedang jahe.</li>
+        <br>
+        <b>🗣️ Edukasi Budaya & Sejarah Lokal</b><br>
+Tour Guide Arya tidak hanya menjadi penunjuk jalan, tetapi juga pendongeng hebat:
+          <li>Legenda Roro Anteng & Joko Seger</li>
+          <li>Tradisi Yadnya Kasada: upacara tahunan warga Tengger di kawah Bromo</li>
+          <li>Kisah spiritual di balik Pura Poten</li>
+          <li>Cara hidup petani sayur dataran tinggi yang ramah dan mandiri</li>
+          <br>
+          <b>🕒 Pilihan Paket Tur:</b><br>
+          <b>Trip Singkat (Sunrise Tour)</b>
+          <li>Waktu: 00:30 – 09:00</li>
+          <li>Termasuk jeep, tiket masuk, dan guide lokal</li>
+          <b>Trip Lengkap (1 Hari)</b>
+          <li>Waktu: 00:30 – 13:00</li>
+          <li>Termasuk semua spot & pendampingan full-day</li>
+          <b>Trip 2 Hari 1 Malam (dengan penginapan homestay atau camping)</b>
+          <br>
+          <br>
+          <b>💼 Fasilitas & Layanan:</b><br>
+          <li>Pemandu pribadi (1 guide untuk 1–6 orang)</li>
+          <li>Jeep 4x4 berpengalaman (driver lokal)</li>
+          <li>Tiket masuk wisata TNBTS (Taman Nasional Bromo Tengger Semeru)</li>
+          <li>Dokumentasi (jika diminta)</li>
+          <li>Syal, masker, dan air mineral gratis</li><br>
+          <b>🌟 Keunggulan Tour Guide Lokal:</b><br>
+          <li>✔️ Akses jalan alternatif dan lokasi sunrise tersembunyi</li>
+          <li>✔️ Bisa atur waktu fleksibel dan kebutuhan khusus</li>
+          <li>✔️ Pengetahuan budaya asli suku Tengger</li>
+          <li>✔️ Bisa bantu wisatawan Muslim dengan makanan halal & waktu sholat</li><br>
+          <b>
+            💰 Harga Paket Mulai:</b><br>
+          <li>Diskon hingga 20% untuk rombongan pelajar atau keluarga besar</li>
+          <li>Rp. 650.000 / orang (min. 2 orang)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- detail Hard -->
+<div class="modal fade" id="modalHard" tabindex="-1" aria-labelledby="modalHardLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-dark" id="modalHardLabel">Detail Paket </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body text-dark">
+        <img src="assets/3carousel.jpg" class="img-fluid rounded mb-3" alt="Detail Hard" />
+        <p>🏖️ Tour Guide Pantai Pandawa – Eksplorasi Pantai Tersembunyi Bali Bersama Pemandu Profesional
+Temukan keindahan tersembunyi Bali Selatan bersama Tour Guide Pantai Pandawa yang berpengalaman dan bersertifikat. Dengan pemandangan dramatis tebing kapur, pasir putih yang halus, serta laut biru yang tenang, Pantai Pandawa adalah destinasi sempurna untuk wisatawan yang mencari ketenangan, keindahan alam, dan cerita budaya lokal yang unik.
+Dipandu oleh pemandu lokal yang memahami sejarah, budaya, dan keunikan tempat ini, perjalanan Anda akan terasa lebih berkesan, aman, dan penuh wawasan.
+        </p>
+        <ul>
+          <b>📍 Highlight Lokasi & Aktivitas di Pantai Pandawa:</b>
+        <p>1. Gerbang Patung Pandawa Lima🌊<br>
+        Jalan masuk ikonik melalui tebing kapur dengan patung Yudhistira, Bima, Arjuna, Nakula, dan Sadewa.
+        Tour guide akan menjelaskan kisah Mahabharata dan simbolisme tokoh-tokoh tersebut dalam budaya Bali.</p> 
+        <p>2. Pantai Pandawa🏖️<br>
+        Pasir putih lembut dan air laut jernih yang tenang, cocok untuk berenang dan bermain bersama anak-anak.
+        Aktivitas: Berenang, kano, paddle board, dan foto-foto.</p>
+        <p>3. Sunset View dari Tebing Kutuh 🌅<br>
+        Pemandangan matahari terbenam dari atas tebing kapur. Guide akan membawa Anda ke spot terbaik untuk melihat sunset tanpa keramaian.</p>
+        <p>4. Kano & Wisata Air🛶<br>
+        Panduan lengkap dan pengawasan keselamatan saat mencoba aktivitas air seperti kano, banana boat, dan snorkeling ringan.</p>
+        <p>5. Wisata Spiritual & Budaya🧘‍♀️<br>
+        Kunjungan ke Pura Gunung Payung atau Pura Segara di sekitar area.
+        Cerita-cerita lokal tentang adat Hindu Bali dan pentingnya laut dalam spiritualitas masyarakat Bali.</p>
+        <br>
+        <b>💼 Fasilitas Paket Tur:</b>
+          <li>Pemandu lokal bersertifikat (half-day / full-day)</li>
+          <li>Transportasi antar-jemput (opsional)</li>
+          <li>Tiket masuk Pantai Pandawa</li>
+          <li>Sewa kano atau aktivitas air (jika diinginkan)</li>
+          <li>Dokumentasi (kamera/ponsel guide)</li>
+          <li>Minuman kelapa muda & air mineral</li>
+          <br>
+          <b>🕒 Pilihan Durasi & Jadwal:</b>
+          <li>Half-day Tour (4 jam): 08:00 – 12:00 atau 14:00 – 18:00</li>
+          <li>Full-day Tour (6–8 jam): Termasuk Pantai Pandawa + spot lain seperti Melasti Beach / GWK / Uluwatu</li>
+          <br>
+          <b>🎁 Bonus & Keunggulan:</b>
+          <li>Cerita eksklusif tentang budaya dan adat istiadat lokal</li>
+          <li>Spot foto rahasia di balik tebing</li>
+          <li>Bantuan pengaturan waktu sholat / makanan halal</li>
+          <li>Pendampingan aman untuk anak-anak dan lansia</li>
+          <br>
+          <b>💰 Harga Paket:</b>
+          <li>Include guide, tiket masuk, air mineral, dan pendampingan</li>
+          <li>Diskon hingga 15% untuk grup keluarga / pelajar</li>
+          <li>Mulai Rp. 400.000 / orang (min. 2 orang)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <!-- Detail jogja -->
+<div class="modal fade" id="modaljogja" tabindex="-1" aria-labelledby="modaljogjaLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-dark" id="modaljogjaLabel">Detail Paket </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body text-dark">
+        <img src="assets/4carousel.jpg" class="img-fluid rounded mb-3" alt="Detail jogja" />
+        <p>🕌 Tour Guide Borobudur – Jelajahi Warisan Budaya Dunia Bersama Pemandu Profesional
+Nikmati pengalaman tak terlupakan menjelajahi kemegahan Candi Borobudur, salah satu situs warisan dunia UNESCO, bersama Tour Guide Lokal Profesional yang berpengetahuan luas dan ramah. Dengan pemandu yang memahami sejarah, filosofi, dan seni arsitektur Borobudur, Anda tidak hanya akan melihat bangunan indah, tetapi juga memahami makna mendalam di balik setiap relief dan stupa.</p>
+          <ul>
+            <h5>📍 Apa Saja yang Akan Anda Jelajahi?</h5><br>
+            <p><b>1. Candi Borobudur (Tingkat 1–3)</b></p>
+            <li>Penjelasan simbolisme tingkatan Kamadhatu, Rupadhatu, dan Arupadhatu</li>
+            <li>Interpretasi lebih dari 2.600 relief dan 504 arca Buddha</li>
+            <li>Fakta sejarah tentang masa kejayaan Dinasti Syailendra</li><br>
+
+            <p><b>2. Spot Foto Legendaris</b></p>
+            <li>Sunrise tour (jika memilih waktu pagi)</li>
+            <li>Pemandangan candi dari area taman hijau</li>
+            <li>Panorama pegunungan Menoreh dan Merapi dari puncak candi</li><br>
+
+            <p><b>3. Spiritual Tour (Opsional)</b></p>
+            <li>Meditasi singkat di area tertinggi candi</li>
+            <li>Makna filosofi hidup menurut ajaran Buddha di balik stupa dan relung</li><br>
+
+            <p><b>4. Wisata Budaya Sekitar</b></p>
+            <li>Workshop membuat gerabah / batik khas Borobudur</li>
+            <li>Desa Wisata Candirejo (bersepeda atau naik andong)</li>
+            <li>Museum Karmawibhangga & Museum Borobudur</li><br>
+            
+            <b>⏰ Pilihan Paket Tur:</b>
+            <li>Reguler Tour	± 2 jam	Tiket masuk, guide lokal</li>
+            <li>Sunrise Tour	04:30 – 08:00	Akses eksklusif pagi hari + pemandu profesional</li>
+            <li>Culture Experience	± 4 jam	Candi + museum + desa wisata + snack tradisional</li>
+            <li>Family/Edu Tour	Disesuaikan	Konten edukatif, aman untuk anak & lansia</li><br>
+
+            <b>💰 Harga Paket Mulai</b>
+            <li>Diskon untuk rombongan sekolah, keluarga, dan paket privat</li>
+            <li>Include: Pemandu lokal, air mineral, hand sanitizer, dan dokumentasi sederhana (opsional)</li>
+            <li>Rp. 150.000 – Rp. 500.000 / orang (tergantung durasi dan layanan)</li>
+          </ul>
+
+        <!-- Detail Mandalika -->
+<div class="modal fade" id="modalmandalika" tabindex="-1" aria-labelledby="modalmandalikaLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-dark" id="modalmandalikaLabel">Detail Paket </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body text-dark">
+        <img src="assets/5carousel.jpg" class="img-fluid rounded mb-3" alt="Detail mandalika" />
+        <p>masih dibuat capek guys</p>
+
+        <!-- Detail Raja Ampat -->
+<div class="modal fade" id="modalrajaampat" tabindex="-1" aria-labelledby="modalrajaampatLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-dark" id="modalrajaampatLabel">Detail Paket </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body text-dark">
+        <img src="assets/6carousel.jpg" class="img-fluid rounded mb-3" alt="Detail mandalika" />
+        <p>masih dibuat capek guys</p>
+
+        <!-- Detail Kepulauan Seribu -->
+<div class="modal fade" id="modalkepseribu" tabindex="-1" aria-labelledby="modalkepseribuLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-dark" id="modalkepseribuLabel">Detail Paket </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body text-dark">
+        <img src="assets/6carousel.jpg" class="img-fluid rounded mb-3" alt="Detail kepseribu" />
+        <p>masih dibuat capek guys</p>
+
+  <!-- first layout end -->
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  </script>
+</body>
+</html>
